@@ -1,0 +1,21 @@
+﻿@using WebApp.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Message</h1>
+            </hgroup>
+            <p>
+                Velkommen til WebApp og Service! 
+            </p>
+        <div class="fetch-replace" data-url="@AppSettings.WebServiceUrl">
+            <span>Her vil data fra webservicen dukke opp!</span>
+        </div>
+        </div>
+
+    </section>
+
+}
